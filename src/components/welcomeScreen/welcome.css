@@ -1,0 +1,99 @@
+  
+  .welcome-screen h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+  }
+  
+  .welcome-screen h3 {
+    font-size: 1.25rem; 
+    margin-bottom: 30px; 
+  }
+  
+  .welcome-screen button {
+    padding: 10px 20px; 
+    font-size: 1.25rem; 
+    color: white; 
+    background-color: #007bff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .welcome-screen button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  .welcome{
+    color:aquamarine;
+    font-size: 90px;
+    font-weight: bold;
+    margin-top: -200px;
+  }
+
+  .text{
+    color:rgb(228, 220, 186);
+    font-size: 40px;
+    margin-top: 0px;
+    
+  }
+
+  .welcome span
+  {
+    color: rgb(240, 79, 79);
+  }
+
+  
+  .welcome {
+    opacity: 0; /* Initially invisible */
+    transform: translateY(20px); /* Start slightly below its final position */
+    animation: fadeInUp 9s ease-out forwards; /* Adjust duration */
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Starts off-screen (or adjust for larger offset) */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Ends in its original position */
+    }
+  }
+  
+
+
+
+  .text {
+    display: inline-block;
+    white-space: nowrap; /* Prevents line breaks */
+    overflow: hidden;
+    animation: scroll 20s linear infinite; /* Adjust the duration as needed */
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(100%); /* Start from the right */
+    }
+    to {
+      transform: translateX(-100%); /* Move to the left */
+    }
+  }
+  
+
+
+ 
+  .start{
+    width: 150px;
+    height: 50px;
+    margin-top: 50px;
+  }
+
+  .start:active {
+    animation: blink 0.3s ease;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }

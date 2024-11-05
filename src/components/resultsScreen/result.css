@@ -1,0 +1,114 @@
+ .results-screen {
+  max-width: 600px;
+  margin-top:90px;
+  margin-bottom: 26px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-height: 700px; /* Restrict height to viewport */
+  overflow-y: hidden; /* Prevent vertical scrolling */
+
+}
+
+.result {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.result-list {
+  margin: 20px 0;
+  max-height: calc(100vh - 250px); /* Dynamic height to prevent overflow */
+  overflow-y: auto; /* Scroll within this section if content overflows */
+}
+
+.result-item {
+  padding: 12px 15px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #555;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.correct-symbol {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect-symbol {
+  color: red;
+  font-weight: bold;
+}
+
+.result-item span {
+  margin-left: 10px;
+}
+
+.score {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+
+.back-to-category-button {
+  position: fixed;
+  top: 5px; 
+  left: 44%; /* Align with the score */
+  background-color: #007bff; 
+  color: white; 
+  border: none; /* Remove default border */
+  border-radius: 5px; 
+  padding: 10px 15px; 
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; 
+  font-weight: bold; 
+  transition: background-color 0.3s; 
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+.back-to-category-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+.back-to-category-button:active {
+  background-color: #00408b;
+  background-color: red;
+  animation: blink 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .results-screen {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .result {
+    font-size: 1.8rem;
+  }
+
+  .result-item {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .back-to-category-button {
+    width: 100%;
+  }
+}
+
+.score{
+  font-size: 20px;
+}
